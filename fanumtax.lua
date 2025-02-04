@@ -1,8 +1,7 @@
 --[[
 
-		Gui2Lua™
-		10zOfficial
-		Version 1.0.0
+	if yo steal this sht yo is a bi cuh
+	V: 0.1
 
 ]]
 
@@ -169,10 +168,10 @@ TextButton_5.Font = Enum.Font.Unknown
 TextButton_5.Text = "Name Esp"
 TextButton_5.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_5.TextSize = 14
-local function onClick3()
-	loadstring(game:HttpGet("https://pastebin.com/YeLp4WnH"))()
+local function onClick33()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/stopbnnmeples/my-hobby/refs/heads/main/actualnameesp.lua"))()
 end
-TextButton_5.MouseButton1Click:Connect(onClick3)
+TextButton_5.MouseButton1Click:Connect(onClick33)
 
 UICorner_7.Parent = TextButton_5
 
@@ -186,10 +185,10 @@ TextButton_6.Font = Enum.Font.Unknown
 TextButton_6.Text = "Hitbox Exp."
 TextButton_6.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_6.TextSize = 14
-local function onClick4()
-	loadstring(game:HttpGet("https://pastebin.com/AghFViLe"))()
+local function onClick44()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/stopbnnmeples/my-hobby/refs/heads/main/NAMEESP2.lua"))()
 end
-TextButton_6.MouseButton1Click:Connect(onClick4)
+TextButton_6.MouseButton1Click:Connect(onClick44)
 
 UICorner_8.Parent = TextButton_6
 
