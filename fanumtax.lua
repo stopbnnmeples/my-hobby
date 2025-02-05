@@ -59,6 +59,13 @@ local ImageLabel_3 = Instance.new("ImageButton")
 local UICorner_22 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
 local UICorner_23 = Instance.new("UICorner")
+local UIStroke = Instance.new("UIStroke")
+local UIDragDetector = Instance.new("UIDragDetector")
+UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke.Color = Color3.fromRGB(38, 255, 0)
+UIStroke.LineJoinMode = Enum.LineJoinMode.Round
+UIStroke.Thickness = 5
+UIStroke.Transparency = 0
 
 -- Properties
 
@@ -68,12 +75,13 @@ ScreenGui.ResetOnSpawn = false
 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.new(0.207843, 0.207843, 0.207843)
-Frame.BackgroundTransparency = 0.30000001192092896
+Frame.BackgroundTransparency = 0.3
 Frame.BorderColor3 = Color3.new(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.288908005, 0, 0.272388071, 0)
+Frame.Position = UDim2.new(0.289, 0, 0.272, 0)
 Frame.Size = UDim2.new(0, 491, 0, 366)
 
+UIDragDetector.Parent = Frame
 UICorner.Parent = Frame
 
 ScrollingFrame.Parent = Frame
@@ -87,6 +95,7 @@ ScrollingFrame.Size = UDim2.new(0, 491, 0, 364)
 UIGridLayout.Parent = ScrollingFrame
 UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIGridLayout.CellSize = UDim2.new(0, 100, 0, 50)
+UIGridLayout.CellPadding = UDim2.new(0, 5, 0, 5)
 
 TextButton.Parent = ScrollingFrame
 TextButton.BackgroundColor3 = Color3.new(0, 0, 0)
@@ -94,12 +103,12 @@ TextButton.BackgroundTransparency = 0.30000001192092896
 TextButton.BorderColor3 = Color3.new(0, 0, 0)
 TextButton.BorderSizePixel = 0
 TextButton.Size = UDim2.new(0, 200, 0, 50)
-TextButton.Font = Enum.Font.Unknown
+TextButton.Font = Enum.Font.Highway
 TextButton.Text = "Infinite Yield"
 TextButton.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton.TextSize = 14
 local function onClick()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end
 TextButton.MouseButton1Click:Connect(onClick)
 
@@ -111,12 +120,12 @@ TextButton_2.BackgroundTransparency = 0.30000001192092896
 TextButton_2.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_2.BorderSizePixel = 0
 TextButton_2.Size = UDim2.new(0, 200, 0, 50)
-TextButton_2.Font = Enum.Font.Unknown
+TextButton_2.Font = Enum.Font.Highway
 TextButton_2.Text = "Vexon Hub"
 TextButton_2.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_2.TextSize = 14
 local function onClick0()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/DiosDi/VexonHub/main/TSB-VexonHub"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/DiosDi/VexonHub/main/TSB-VexonHub"))()
 end
 TextButton_2.MouseButton1Click:Connect(onClick0)
 
@@ -128,12 +137,12 @@ TextButton_3.BackgroundTransparency = 0.30000001192092896
 TextButton_3.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_3.BorderSizePixel = 0
 TextButton_3.Size = UDim2.new(0, 200, 0, 50)
-TextButton_3.Font = Enum.Font.Unknown
+TextButton_3.Font = Enum.Font.Highway
 TextButton_3.Text = "MsPaint"
 TextButton_3.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_3.TextSize = 14
 local function onClick1()
-    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/002c19202c9946e6047b0c6e0ad51f84.lua"))()
+	loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/002c19202c9946e6047b0c6e0ad51f84.lua"))()
 end
 TextButton_3.MouseButton1Click:Connect(onClick1)
 
@@ -145,12 +154,12 @@ TextButton_4.BackgroundTransparency = 0.30000001192092896
 TextButton_4.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_4.BorderSizePixel = 0
 TextButton_4.Size = UDim2.new(0, 200, 0, 50)
-TextButton_4.Font = Enum.Font.Unknown
+TextButton_4.Font = Enum.Font.Highway
 TextButton_4.Text = "Alchemy Hub"
 TextButton_4.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_4.TextSize = 14
 local function onClick2()
-    loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
+	loadstring(game:HttpGet("https://scripts.alchemyhub.xyz"))()
 end
 TextButton_4.MouseButton1Click:Connect(onClick2)
 
@@ -164,7 +173,7 @@ TextButton_5.BackgroundTransparency = 0.30000001192092896
 TextButton_5.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_5.BorderSizePixel = 0
 TextButton_5.Size = UDim2.new(0, 200, 0, 50)
-TextButton_5.Font = Enum.Font.Unknown
+TextButton_5.Font = Enum.Font.Highway
 TextButton_5.Text = "Name Esp"
 TextButton_5.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_5.TextSize = 14
@@ -181,7 +190,7 @@ TextButton_6.BackgroundTransparency = 0.30000001192092896
 TextButton_6.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_6.BorderSizePixel = 0
 TextButton_6.Size = UDim2.new(0, 200, 0, 50)
-TextButton_6.Font = Enum.Font.Unknown
+TextButton_6.Font = Enum.Font.Highway
 TextButton_6.Text = "Hitbox Exp."
 TextButton_6.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_6.TextSize = 14
@@ -198,12 +207,12 @@ TextButton_7.BackgroundTransparency = 0.30000001192092896
 TextButton_7.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_7.BorderSizePixel = 0
 TextButton_7.Size = UDim2.new(0, 200, 0, 50)
-TextButton_7.Font = Enum.Font.Unknown
+TextButton_7.Font = Enum.Font.Highway
 TextButton_7.Text = "punkz (R15)"
 TextButton_7.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_7.TextSize = 14
 local function onClick5()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/blackheartedcurse/punkz-Scripts/main/SolaraVersionRagdoll.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/blackheartedcurse/punkz-Scripts/main/SolaraVersionRagdoll.lua"))()
 end
 TextButton_7.MouseButton1Click:Connect(onClick5)
 
@@ -215,12 +224,12 @@ TextButton_8.BackgroundTransparency = 0.30000001192092896
 TextButton_8.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_8.BorderSizePixel = 0
 TextButton_8.Size = UDim2.new(0, 200, 0, 50)
-TextButton_8.Font = Enum.Font.Unknown
+TextButton_8.Font = Enum.Font.Highway
 TextButton_8.Text = "Bypass Chat"
 TextButton_8.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_8.TextSize = 14
 local function onClick6()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Gazer-Ha/Reimagined/refs/heads/main/Gaze%20bypass'))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Gazer-Ha/Reimagined/refs/heads/main/Gaze%20bypass'))()
 end
 TextButton_8.MouseButton1Click:Connect(onClick6)
 
@@ -232,12 +241,12 @@ TextButton_9.BackgroundTransparency = 0.30000001192092896
 TextButton_9.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_9.BorderSizePixel = 0
 TextButton_9.Size = UDim2.new(0, 200, 0, 50)
-TextButton_9.Font = Enum.Font.Unknown
+TextButton_9.Font = Enum.Font.Highway
 TextButton_9.Text = "TP Walk"
 TextButton_9.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_9.TextSize = 14
 local function onClick7()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/scarlet1837/a/main/Tpwalk"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/scarlet1837/a/main/Tpwalk"))()
 end
 TextButton_9.MouseButton1Click:Connect(onClick7)
 
@@ -249,12 +258,12 @@ TextButton_10.BackgroundTransparency = 0.30000001192092896
 TextButton_10.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_10.BorderSizePixel = 0
 TextButton_10.Size = UDim2.new(0, 200, 0, 50)
-TextButton_10.Font = Enum.Font.Unknown
+TextButton_10.Font = Enum.Font.Highway
 TextButton_10.Text = "Fake Lag"
 TextButton_10.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_10.TextSize = 14
 local function onClick8()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/RENZXW/RENZXW-SCRIPTS/main/fakeLAGRENZXW.txt"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RENZXW/RENZXW-SCRIPTS/main/fakeLAGRENZXW.txt"))()
 end
 TextButton_10.MouseButton1Click:Connect(onClick8)
 
@@ -266,12 +275,12 @@ TextButton_11.BackgroundTransparency = 0.30000001192092896
 TextButton_11.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_11.BorderSizePixel = 0
 TextButton_11.Size = UDim2.new(0, 200, 0, 50)
-TextButton_11.Font = Enum.Font.Unknown
+TextButton_11.Font = Enum.Font.Highway
 TextButton_11.Text = "Emote Gui"
 TextButton_11.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_11.TextSize = 14
 local function onClick9()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua"))()
 end
 TextButton_11.MouseButton1Click:Connect(onClick9)
 
@@ -283,12 +292,12 @@ TextButton_12.BackgroundTransparency = 0.30000001192092896
 TextButton_12.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_12.BorderSizePixel = 0
 TextButton_12.Size = UDim2.new(0, 200, 0, 50)
-TextButton_12.Font = Enum.Font.Unknown
+TextButton_12.Font = Enum.Font.Highway
 TextButton_12.Text = "Spider Gui"
 TextButton_12.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_12.TextSize = 14
 local function onClick10()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/SpiderScriptRB/SpiderScriptRBUniversal/refs/heads/main/Protected_Spider.txt"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SpiderScriptRB/SpiderScriptRBUniversal/refs/heads/main/Protected_Spider.txt"))()
 end
 TextButton_12.MouseButton1Click:Connect(onClick10)
 
@@ -300,12 +309,12 @@ TextButton_13.BackgroundTransparency = 0.30000001192092896
 TextButton_13.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_13.BorderSizePixel = 0
 TextButton_13.Size = UDim2.new(0, 200, 0, 50)
-TextButton_13.Font = Enum.Font.Unknown
+TextButton_13.Font = Enum.Font.Highway
 TextButton_13.Text = "Spy Gui"
 TextButton_13.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_13.TextSize = 14
 local function onClick11()
-    loadstring(game:HttpGet("https://pastebin.com/raw/uPGrjsd6"))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/uPGrjsd6"))()
 end
 TextButton_13.MouseButton1Click:Connect(onClick11)
 
@@ -317,12 +326,12 @@ TextButton_14.BackgroundTransparency = 0.30000001192092896
 TextButton_14.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_14.BorderSizePixel = 0
 TextButton_14.Size = UDim2.new(0, 200, 0, 50)
-TextButton_14.Font = Enum.Font.Unknown
+TextButton_14.Font = Enum.Font.Highway
 TextButton_14.Text = "Chat Draw"
 TextButton_14.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_14.TextSize = 14
 local function onClick12()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/AKadminlol/Chatdraw/refs/heads/main/Chattdraw"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/AKadminlol/Chatdraw/refs/heads/main/Chattdraw"))()
 end
 TextButton_14.MouseButton1Click:Connect(onClick12)
 
@@ -334,14 +343,14 @@ TextButton_15.BackgroundTransparency = 0.30000001192092896
 TextButton_15.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_15.BorderSizePixel = 0
 TextButton_15.Size = UDim2.new(0, 200, 0, 50)
-TextButton_15.Font = Enum.Font.Unknown
+TextButton_15.Font = Enum.Font.Highway
 TextButton_15.Text = "Quiz Bot"
 TextButton_15.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_15.TextSize = 14
 local function onClick13()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Damian-11/quizbot/master/quizbot.luau"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Damian-11/quizbot/master/quizbot.luau"))()
 end
-TextButton_15.MouseButton1Click:Connect(onClick14)
+TextButton_15.MouseButton1Click:Connect(onClick13)
 
 UICorner_17.Parent = TextButton_15
 
@@ -351,12 +360,12 @@ TextButton_16.BackgroundTransparency = 0.30000001192092896
 TextButton_16.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_16.BorderSizePixel = 0
 TextButton_16.Size = UDim2.new(0, 200, 0, 50)
-TextButton_16.Font = Enum.Font.Unknown
+TextButton_16.Font = Enum.Font.Highway
 TextButton_16.Text = "FE Fighter (R6)"
 TextButton_16.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_16.TextSize = 14
 local function onClick14()
-    loadstring(game:HttpGet("https://pastefy.app/wxVAgZpT/raw"))()
+	loadstring(game:HttpGet("https://pastefy.app/wxVAgZpT/raw"))()
 end
 TextButton_16.MouseButton1Click:Connect(onClick14)
 
@@ -368,12 +377,12 @@ TextButton_17.BackgroundTransparency = 0.30000001192092896
 TextButton_17.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_17.BorderSizePixel = 0
 TextButton_17.Size = UDim2.new(0, 200, 0, 50)
-TextButton_17.Font = Enum.Font.Unknown
+TextButton_17.Font = Enum.Font.Highway
 TextButton_17.Text = "R6 Anims"
 TextButton_17.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_17.TextSize = 14
 local function onClick15()
-    loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fe-Silly-animation-V4-16636"))()
+	loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fe-Silly-animation-V4-16636"))()
 end
 TextButton_17.MouseButton1Click:Connect(onClick15)
 
@@ -408,14 +417,14 @@ ImageLabel_2.ImageTransparency = 1
 ImageLabel_2.ScaleType = Enum.ScaleType.Crop
 
 UICorner_21.Parent = ImageLabel_2
-
+UIStroke.Parent = ImageLabel_2
 UIPadding_3.Parent = ImageLabel_2
 
 ImageLabel_3.Parent = ScreenGui
 ImageLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
 ImageLabel_3.BorderColor3 = Color3.new(0, 0, 0)
 ImageLabel_3.BorderSizePixel = 0
-ImageLabel_3.Position = UDim2.new(0.717, 0, 0.203, 0)
+ImageLabel_3.Position = UDim2.new(-0.002, 12,0.946, 1)
 ImageLabel_3.Size = UDim2.new(0, 50, 0, 50)
 ImageLabel_3.Image = "http://www.roblox.com/asset/?id=2570751722"
 ImageLabel_3.MouseButton1Click:connect(function()
