@@ -211,10 +211,10 @@ TextButton_7.Font = Enum.Font.Highway
 TextButton_7.Text = "punkz (R15)"
 TextButton_7.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_7.TextSize = 14
-local function onClick5()
+local function onClick55()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/blackheartedcurse/punkz-Scripts/main/SolaraVersionRagdoll.lua"))()
 end
-TextButton_7.MouseButton1Click:Connect(onClick5)
+TextButton_7.MouseButton1Click:Connect(onClick55)
 
 UICorner_9.Parent = TextButton_7
 
