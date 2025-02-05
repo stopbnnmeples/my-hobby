@@ -61,6 +61,17 @@ local UICorner_22 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
 local UICorner_23 = Instance.new("UICorner")
 local UIStroke = Instance.new("UIStroke")
+local UICorner_32 = Instance.new("UICorner")
+local TextButton_19 = Instance.new("TextButton")
+local TextButton_20 = Instance.new("TextButton")
+local TextButton_21 = Instance.new("TextButton")
+local TextButton_22 = Instance.new("TextButton")
+local TextButton_23 = Instance.new("TextButton")
+local UICorner_33 = Instance.new("UICorner")
+local UICorner_34 = Instance.new("UICorner")
+local UICorner_35 = Instance.new("UICorner")
+local UICorner_36 = Instance.new("UICorner")
+local UICorner_37 = Instance.new("UICorner")
 local UIDragDetector = Instance.new("UIDragDetector")
 UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 UIStroke.Color = Color3.fromRGB(38, 255, 0)
@@ -409,7 +420,7 @@ NotificationBindable.OnInvoke = callback
  
 game.StarterGui:SetCore("SendNotification", {
     Title = "A-verage Hub";
-    Text = "If u try this u prob gonna spin to death";
+    Text = "If u try this on an ass executor u prob gonna spin to death";
     Duration = "5";
     Callback = NotificationBindable;
 })
@@ -432,7 +443,7 @@ TextButton_17.TextSize = 14
 local function onClick15()
 	loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fe-Silly-animation-V4-16636"))()
 end
-TextButton_18.MouseButton1Click:Connect(onClick15)
+TextButton_17.MouseButton1Click:Connect(onClick15)
 
 TextButton_18.Parent = ScrollingFrame
 TextButton_18.BackgroundColor3 = Color3.new(0, 0, 0)
@@ -444,12 +455,92 @@ TextButton_18.Font = Enum.Font.Highway
 TextButton_18.Text = "Vape V4"
 TextButton_18.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_18.TextSize = 14
-local function onClick16()
+local function onClick178()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
 end
-TextButton_17.MouseButton1Click:Connect(onClick16)
+TextButton_18.MouseButton1Click:Connect(onClick178)
+UICorner_32.Parent = TextButton_18
 
+TextButton_19.Parent = ScrollingFrame
+TextButton_19.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_19.BackgroundTransparency = 0.30000001192092896
+TextButton_19.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_19.BorderSizePixel = 0
+TextButton_19.Size = UDim2.new(0, 200, 0, 50)
+TextButton_19.Font = Enum.Font.Highway
+TextButton_19.Text = "SpeedHubX"
+TextButton_19.TextColor3 = Color3.new(0.0156863, 1, 0)
+TextButton_19.TextSize = 14
+local function onClick177()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua"))()
+end
+TextButton_19.MouseButton1Click:Connect(onClick177)
+UICorner_33.Parent = TextButton_19
 UICorner_19.Parent = TextButton_17
+
+TextButton_20.Parent = ScrollingFrame
+TextButton_20.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_20.BackgroundTransparency = 0.30000001192092896
+TextButton_20.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_20.BorderSizePixel = 0
+TextButton_20.Size = UDim2.new(0, 200, 0, 50)
+TextButton_20.Font = Enum.Font.Highway
+TextButton_20.Text = "HOHO Hub"
+TextButton_20.TextColor3 = Color3.new(0.0156863, 1, 0)
+TextButton_20.TextSize = 14
+local function onClick18()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end
+TextButton_20.MouseButton1Click:Connect(onClick18)
+UICorner_34.Parent = TextButton_20
+
+TextButton_21.Parent = ScrollingFrame
+TextButton_21.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_21.BackgroundTransparency = 0.30000001192092896
+TextButton_21.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_21.BorderSizePixel = 0
+TextButton_21.Size = UDim2.new(0, 200, 0, 50)
+TextButton_21.Font = Enum.Font.Highway
+TextButton_21.Text = "Forsaken"
+TextButton_21.TextColor3 = Color3.new(0.0156863, 1, 0)
+TextButton_21.TextSize = 14
+local function onClick19()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e1cfd93b113a79773d93251b61af1e2f.lua"))()
+end
+TextButton_21.MouseButton1Click:Connect(onClick19)
+UICorner_35.Parent = TextButton_21
+
+TextButton_22.Parent = ScrollingFrame
+TextButton_22.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_22.BackgroundTransparency = 0.30000001192092896
+TextButton_22.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_22.BorderSizePixel = 0
+TextButton_22.Size = UDim2.new(0, 200, 0, 50)
+TextButton_22.Font = Enum.Font.Highway
+TextButton_22.Text = "8Bit"
+TextButton_22.TextColor3 = Color3.new(0.0156863, 1, 0)
+TextButton_22.TextSize = 14
+local function onClick20()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/8bits4ya/rivals-v3/refs/heads/main/main.lua"))()
+end
+TextButton_22.MouseButton1Click:Connect(onClick20)
+UICorner_36.Parent = TextButton_22
+
+TextButton_23.Parent = ScrollingFrame
+TextButton_23.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_23.BackgroundTransparency = 0.30000001192092896
+TextButton_23.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_23.BorderSizePixel = 0
+TextButton_23.Size = UDim2.new(0, 200, 0, 50)
+TextButton_23.Font = Enum.Font.Highway
+TextButton_23.Text = "Respawn Hub"
+TextButton_23.TextColor3 = Color3.new(0.0156863, 1, 0)
+TextButton_23.TextSize = 14
+local function onClick21()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Yetfmafi/RespawnHub/refs/heads/main/Main"))()
+end
+TextButton_23.MouseButton1Click:Connect(onClick21)
+UICorner_37.Parent = TextButton_23
 
 ImageLabel.Parent = Frame
 ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
