@@ -67,11 +67,21 @@ local TextButton_20 = Instance.new("TextButton")
 local TextButton_21 = Instance.new("TextButton")
 local TextButton_22 = Instance.new("TextButton")
 local TextButton_23 = Instance.new("TextButton")
+local TextButton_24 = Instance.new("TextButton")
+local TextButton_25 = Instance.new("TextButton")
+local TextButton_26 = Instance.new("TextButton")
+local TextButton_27 = Instance.new("TextButton")
+local TextButton_28 = Instance.new("TextButton")
 local UICorner_33 = Instance.new("UICorner")
 local UICorner_34 = Instance.new("UICorner")
 local UICorner_35 = Instance.new("UICorner")
 local UICorner_36 = Instance.new("UICorner")
 local UICorner_37 = Instance.new("UICorner")
+local UICorner_38 = Instance.new("UICorner")
+local UICorner_39 = Instance.new("UICorner")
+local UICorner_40 = Instance.new("UICorner")
+local UICorner_41 = Instance.new("UICorner")
+local UICorner_42 = Instance.new("UICorner")
 local UIDragDetector = Instance.new("UIDragDetector")
 UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 UIStroke.Color = Color3.fromRGB(38, 255, 0)
@@ -541,6 +551,70 @@ loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Yetfmafi/Respawn
 end
 TextButton_23.MouseButton1Click:Connect(onClick21)
 UICorner_37.Parent = TextButton_23
+
+TextButton_24.Parent = ScrollingFrame
+TextButton_24.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_24.BackgroundTransparency = 0.30000001192092896
+TextButton_24.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_24.BorderSizePixel = 0
+TextButton_24.Size = UDim2.new(0, 200, 0, 50)
+TextButton_24.Font = Enum.Font.Highway
+TextButton_24.Text = "HiddenRevamp"
+TextButton_24.TextColor3 = Color3.new(0.0156863, 1, 0)
+TextButton_24.TextSize = 14
+local function onClick22()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tulontop/HiddenRevamp/refs/heads/main/Loader.luau"))()
+end
+TextButton_24.MouseButton1Click:Connect(onClick22)
+UICorner_38.Parent = TextButton_24
+
+TextButton_25.Parent = ScrollingFrame
+TextButton_25.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_25.BackgroundTransparency = 0.30000001192092896
+TextButton_25.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_25.BorderSizePixel = 0
+TextButton_25.Size = UDim2.new(0, 200, 0, 50)
+TextButton_25.Font = Enum.Font.Highway
+TextButton_25.Text = "BABFT"
+TextButton_25.TextColor3 = Color3.new(0.0156863, 1, 0)
+TextButton_25.TextSize = 14
+local function onClick23()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/TheRealAsu/BABFT/refs/heads/main/Jan25_Source.lua'))()
+end
+TextButton_25.MouseButton1Click:Connect(onClick23)
+UICorner_39.Parent = TextButton_25
+
+TextButton_26.Parent = ScrollingFrame
+TextButton_26.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_26.BackgroundTransparency = 0.30000001192092896
+TextButton_26.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_26.BorderSizePixel = 0
+TextButton_26.Size = UDim2.new(0, 200, 0, 50)
+TextButton_26.Font = Enum.Font.Highway
+TextButton_26.Text = "XHub"
+TextButton_26.TextColor3 = Color3.new(0.0156863, 1, 0)
+TextButton_26.TextSize = 14
+local function onClick23()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptBrv/XHB/refs/heads/main/XHB.md",true))()
+end
+TextButton_26.MouseButton1Click:Connect(onClick23)
+UICorner_39.Parent = TextButton_26
+
+TextButton_27.Parent = ScrollingFrame
+TextButton_27.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_27.BackgroundTransparency = 0.30000001192092896
+TextButton_27.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_27.BorderSizePixel = 0
+TextButton_27.Size = UDim2.new(0, 200, 0, 50)
+TextButton_27.Font = Enum.Font.Highway
+TextButton_27.Text = "ZenonHub"
+TextButton_27.TextColor3 = Color3.new(0.0156863, 1, 0)
+TextButton_27.TextSize = 14
+local function onClick24()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/522897bf43bc6bccb804fc608917db8e.lua"))()
+end
+TextButton_27.MouseButton1Click:Connect(onClick24)
+UICorner_40.Parent = TextButton_27
 
 ImageLabel.Parent = Frame
 ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
