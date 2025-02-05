@@ -208,11 +208,11 @@ TextButton_7.BorderColor3 = Color3.new(0, 0, 0)
 TextButton_7.BorderSizePixel = 0
 TextButton_7.Size = UDim2.new(0, 200, 0, 50)
 TextButton_7.Font = Enum.Font.Highway
-TextButton_7.Text = "punkz (R15)"
+TextButton_7.Text = "SystemBroken"
 TextButton_7.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_7.TextSize = 14
 local function onClick55()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/blackheartedcurse/punkz-Scripts/main/SolaraVersionRagdoll.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"))()
 end
 TextButton_7.MouseButton1Click:Connect(onClick55)
 
@@ -229,6 +229,18 @@ TextButton_8.Text = "Bypass Chat"
 TextButton_8.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_8.TextSize = 14
 local function onClick6()
+		local function callback(Text)
+end
+ 
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+ 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "A-verage Hub";
+    Text = "you need to change ur roblox language to Қазақ Тілі.";
+    Duration = "5";
+    Callback = NotificationBindable;
+})
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Gazer-Ha/Reimagined/refs/heads/main/Gaze%20bypass'))()
 end
 TextButton_8.MouseButton1Click:Connect(onClick6)
@@ -246,6 +258,18 @@ TextButton_9.Text = "TP Walk"
 TextButton_9.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_9.TextSize = 14
 local function onClick7()
+		local function callback(Text)
+end
+ 
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+ 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "A-verage Hub";
+    Text = "WARNING THIS SCRIPT IS ASS";
+    Duration = "5";
+    Callback = NotificationBindable;
+})
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/scarlet1837/a/main/Tpwalk"))()
 end
 TextButton_9.MouseButton1Click:Connect(onClick7)
@@ -297,7 +321,18 @@ TextButton_12.Text = "Spider Gui"
 TextButton_12.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_12.TextSize = 14
 local function onClick10()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/SpiderScriptRB/SpiderScriptRBUniversal/refs/heads/main/Protected_Spider.txt"))()
+		local function callback(Text)
+end
+ 
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+ 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "A-verage Hub";
+    Text = "This script doesnt work";
+    Duration = "5";
+    Callback = NotificationBindable;
+})
 end
 TextButton_12.MouseButton1Click:Connect(onClick10)
 
@@ -365,6 +400,18 @@ TextButton_16.Text = "FE Fighter (R6)"
 TextButton_16.TextColor3 = Color3.new(0.0156863, 1, 0)
 TextButton_16.TextSize = 14
 local function onClick14()
+		local function callback(Text)
+end
+ 
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+ 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "A-verage Hub";
+    Text = "If u try this u prob gonna spin to death";
+    Duration = "5";
+    Callback = NotificationBindable;
+})
 	loadstring(game:HttpGet("https://pastefy.app/wxVAgZpT/raw"))()
 end
 TextButton_16.MouseButton1Click:Connect(onClick14)
