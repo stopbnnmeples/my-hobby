@@ -431,7 +431,22 @@ TextButton_17.TextSize = 14
 local function onClick15()
 	loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fe-Silly-animation-V4-16636"))()
 end
-TextButton_17.MouseButton1Click:Connect(onClick15)
+TextButton_18.MouseButton1Click:Connect(onClick15)
+
+TextButton_18.Parent = ScrollingFrame
+TextButton_18.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_18.BackgroundTransparency = 0.30000001192092896
+TextButton_18.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_18.BorderSizePixel = 0
+TextButton_18.Size = UDim2.new(0, 200, 0, 50)
+TextButton_18.Font = Enum.Font.Highway
+TextButton_18.Text = "Vape V4"
+TextButton_18.TextColor3 = Color3.new(0.0156863, 1, 0)
+TextButton_18.TextSize = 14
+local function onClick16()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end
+TextButton_17.MouseButton1Click:Connect(onClick16)
 
 UICorner_19.Parent = TextButton_17
 
