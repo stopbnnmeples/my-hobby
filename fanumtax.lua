@@ -73,6 +73,7 @@ local TextButton_26 = Instance.new("TextButton")
 local TextButton_27 = Instance.new("TextButton")
 local TextButton_28 = Instance.new("TextButton")
 local TextButton_29 = Instance.new("TextButton")
+local TextButton_30 = Instance.new("TextButton")
 local UICorner_33 = Instance.new("UICorner")
 local UICorner_34 = Instance.new("UICorner")
 local UICorner_35 = Instance.new("UICorner")
@@ -84,6 +85,7 @@ local UICorner_40 = Instance.new("UICorner")
 local UICorner_41 = Instance.new("UICorner")
 local UICorner_42 = Instance.new("UICorner")
 local UICorner_43 = Instance.new("UICorner")
+local UICorner_44 = Instance.new("UICorner")
 local UIDragDetector = Instance.new("UIDragDetector")
 UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 UIStroke.Color = Color3.fromRGB(38, 255, 0)
@@ -649,6 +651,34 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ago106/ScriptsRoblox/
 end
 TextButton_29.MouseButton1Click:Connect(onClick26)
 UICorner_42.Parent = TextButton_29
+
+TextButton_30.Parent = ScrollingFrame
+TextButton_30.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_30.BackgroundTransparency = 0.30000001192092896
+TextButton_30.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_30.BorderSizePixel = 0
+TextButton_30.Size = UDim2.new(0, 200, 0, 50)
+TextButton_30.Font = Enum.Font.Highway
+TextButton_30.Text = "Sanity Hub"
+TextButton_30.TextColor3 = Color3.new(0.0156863, 1, 0)
+TextButton_30.TextSize = 14
+local function onClick27()
+			local function callback(Text)
+end
+ 
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+ 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "A-verage Hub";
+    Text = "to run this script use the key: KEY_k7DqBcjp2q Ill give u some time:)";
+    Duration = "20";
+    Callback = NotificationBindable;
+})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/helldevelopment/RobloxScripts/main/SanityLoader.lua"))()
+end
+TextButton_30.MouseButton1Click:Connect(onClick27)
+UICorner_43.Parent = TextButton_30
 
 ImageLabel.Parent = Frame
 ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
