@@ -263,7 +263,7 @@ game.StarterGui:SetCore("SendNotification", {
     Duration = "5";
     Callback = NotificationBindable;
 })
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/Gazer-Ha/Reimagined/refs/heads/main/Gaze%20bypass'))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/AnnaRoblox/AnnaBypasser/refs/heads/main/AnnaBypasser.lua",true))()
 end
 TextButton_8.MouseButton1Click:Connect(onClick6)
 
