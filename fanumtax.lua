@@ -74,6 +74,8 @@ local TextButton_27 = Instance.new("TextButton")
 local TextButton_28 = Instance.new("TextButton")
 local TextButton_29 = Instance.new("TextButton")
 local TextButton_30 = Instance.new("TextButton")
+local TextButton_31 = Instance.new("TextButton")
+local TextButton_32 = Instance.new("TextButton")
 local UICorner_33 = Instance.new("UICorner")
 local UICorner_34 = Instance.new("UICorner")
 local UICorner_35 = Instance.new("UICorner")
@@ -86,6 +88,8 @@ local UICorner_41 = Instance.new("UICorner")
 local UICorner_42 = Instance.new("UICorner")
 local UICorner_43 = Instance.new("UICorner")
 local UICorner_44 = Instance.new("UICorner")
+local UICorner_45 = Instance.new("UICorner")
+local UICorner_46 = Instance.new("UICorner")
 local UIDragDetector = Instance.new("UIDragDetector")
 UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 UIStroke.Color = Color3.fromRGB(38, 255, 0)
@@ -671,7 +675,7 @@ NotificationBindable.OnInvoke = callback
  
 game.StarterGui:SetCore("SendNotification", {
     Title = "A-verage Hub";
-    Text = "to run this script use the key: KEY_k7DqBcjp2q Ill give u some time:)";
+    Text = "join this server for key: discord.gg/hBPC5D9TGB";
     Duration = "20";
     Callback = NotificationBindable;
 })
@@ -679,6 +683,34 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/helldevelopment/Roblo
 end
 TextButton_30.MouseButton1Click:Connect(onClick27)
 UICorner_43.Parent = TextButton_30
+
+TextButton_31.Parent = ScrollingFrame
+TextButton_31.BackgroundColor3 = Color3.new(0, 0, 0)
+TextButton_31.BackgroundTransparency = 0.30000001192092896
+TextButton_31.BorderColor3 = Color3.new(0, 0, 0)
+TextButton_31.BorderSizePixel = 0
+TextButton_31.Size = UDim2.new(0, 200, 0, 50)
+TextButton_31.Font = Enum.Font.Highway
+TextButton_31.Text = "Anti-V2"
+TextButton_31.TextColor3 = Color3.new(0.0156863, 1, 0)
+TextButton_31.TextSize = 14
+local function onClick28()
+			local function callback(Text)
+end
+ 
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+ 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "A-verage Hub";
+    Text = "this is for da hood or some";
+    Duration = "5";
+    Callback = NotificationBindable;
+})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/flanchhh/AntiV2/refs/heads/main/Anti%20v2.lua"))();
+end
+TextButton_31.MouseButton1Click:Connect(onClick28)
+UICorner_44.Parent = TextButton_31
 
 ImageLabel.Parent = Frame
 ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
