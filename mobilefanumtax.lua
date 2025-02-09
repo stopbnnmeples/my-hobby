@@ -7,7 +7,18 @@
 
 
 -- Instances
-
+local function callback(Text)
+end
+ 
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+ 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "A-verage Hub";
+    Text = "Hi mobile user, Mobile version is heavily W.I.P so it may have bugs";
+    Duration = "10";
+    Callback = NotificationBindable;
+})
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -90,7 +101,6 @@ local UICorner_43 = Instance.new("UICorner")
 local UICorner_44 = Instance.new("UICorner")
 local UICorner_45 = Instance.new("UICorner")
 local UICorner_46 = Instance.new("UICorner")
-local UIDragDetector = Instance.new("UIDragDetector")
 UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 UIStroke.Color = Color3.fromRGB(38, 255, 0)
 UIStroke.LineJoinMode = Enum.LineJoinMode.Round
@@ -108,10 +118,9 @@ Frame.BackgroundColor3 = Color3.new(0.207843, 0.207843, 0.207843)
 Frame.BackgroundTransparency = 0.3
 Frame.BorderColor3 = Color3.new(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.289, 0, 0.272, 0)
-Frame.Size = UDim2.new(0, 491, 0, 366)
+Frame.Position = UDim2.new(0.086, 57, -0.332, 130)
+Frame.Size = UDim2.new(0, 492, 0, 270)
 
-UIDragDetector.Parent = Frame
 UICorner.Parent = Frame
 
 ScrollingFrame.Parent = Frame
@@ -120,7 +129,8 @@ ScrollingFrame.BackgroundColor3 = Color3.new(1, 1, 1)
 ScrollingFrame.BackgroundTransparency = 1
 ScrollingFrame.BorderColor3 = Color3.new(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
-ScrollingFrame.Size = UDim2.new(0, 491, 0, 364)
+ScrollingFrame.Size = UDim2.new(0, 491, 0, 267)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 5, 0)
 
 UIGridLayout.Parent = ScrollingFrame
 UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
@@ -717,7 +727,8 @@ ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
 ImageLabel.BackgroundTransparency = 1
 ImageLabel.BorderColor3 = Color3.new(0, 0, 0)
 ImageLabel.BorderSizePixel = 0
-ImageLabel.Size = UDim2.new(0, 491, 0, 366)
+ImageLabel.Size = UDim2.new(0, 491, 0, 273)
+ImageLabel.Position = UDim2.new(-0,0, 0,0)
 ImageLabel.ZIndex = 0
 ImageLabel.Image = "http://www.roblox.com/asset/?id=116380616656893"
 ImageLabel.ScaleType = Enum.ScaleType.Crop
@@ -733,8 +744,8 @@ ImageLabel_2.BackgroundColor3 = Color3.new(0, 0, 0)
 ImageLabel_2.BackgroundTransparency = 0.4000000059604645
 ImageLabel_2.BorderColor3 = Color3.new(0, 0, 0)
 ImageLabel_2.BorderSizePixel = 0
-ImageLabel_2.Position = UDim2.new(-0.0122199589, 0, -0.0163934417, 0)
-ImageLabel_2.Size = UDim2.new(0, 504, 0, 378)
+ImageLabel_2.Position = UDim2.new(-0.001, 0,-0.002, 0)
+ImageLabel_2.Size = UDim2.new(0, 491,0, 273)
 ImageLabel_2.ZIndex = -1
 ImageLabel_2.Image = "http://www.roblox.com/asset/?id=116380616656893"
 ImageLabel_2.ImageTransparency = 1
@@ -748,8 +759,8 @@ ImageLabel_3.Parent = ScreenGui
 ImageLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
 ImageLabel_3.BorderColor3 = Color3.new(0, 0, 0)
 ImageLabel_3.BorderSizePixel = 0
-ImageLabel_3.Position = UDim2.new(-0.002, 12,0.946, 1)
-ImageLabel_3.Size = UDim2.new(0, 50, 0, 50)
+ImageLabel_3.Position = UDim2.new(-0.017, 12,0.913, 1)
+ImageLabel_3.Size = UDim2.new(0, 25, 0, 25)
 ImageLabel_3.Image = "http://www.roblox.com/asset/?id=2570751722"
 ImageLabel_3.MouseButton1Click:connect(function()
 	ScreenGui.Frame.Visible = not ScreenGui.Frame.Visible
@@ -762,16 +773,16 @@ TextLabel.BackgroundColor3 = Color3.new(0, 0, 0)
 TextLabel.BackgroundTransparency = 0.800000011920929
 TextLabel.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(-0.0122199589, 0, 1.04918027, 0)
-TextLabel.Size = UDim2.new(0, 504, 0, 50)
+TextLabel.Position = UDim2.new(0.359, 0,1.024, 0)
+TextLabel.Size = UDim2.new(0, 137,0, 20)
 TextLabel.Font = Enum.Font.Sarpanch
-TextLabel.Text = "A-verage Hub"
+TextLabel.Text = "A-verage Hub Mobile"
 TextLabel.TextColor3 = Color3.new(0.133333, 1, 0)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14
 TextLabel.TextStrokeColor3 = Color3.new(0, 1, 0.0313726)
-TextLabel.TextStrokeTransparency = 0
-TextLabel.TextTransparency = 0.8999999761581421
+TextLabel.TextStrokeTransparency = 1
+TextLabel.TextTransparency = 0
 TextLabel.TextWrapped = true
 
 UICorner_23.Parent = TextLabel
